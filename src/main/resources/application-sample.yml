@@ -1,0 +1,12 @@
+# Modelo de configuração.
+# Copie este arquivo para application.yml (na mesma pasta) e preencha os valores.
+# O application.yml está no .gitignore e nunca vai para o Git.
+
+spring:
+  application:
+    name: ia-java
+
+anthropic:
+  api-key: COLE-SUA-CHAVE-AQUI   # crie em platform.claude.com/settings/keys
+  model: claude-sonnet-5-5       # modelo usado no livro
+  max-retries: 3                 # novas tentativas automáticas em erros temporários
