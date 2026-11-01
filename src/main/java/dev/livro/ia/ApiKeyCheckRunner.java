@@ -4,12 +4,17 @@ import com.anthropic.client.AnthropicClient;
 import com.anthropic.models.messages.Message;
 import com.anthropic.models.messages.MessageCreateParams;
 import com.anthropic.models.messages.TextBlock;
+
+import dev.livro.ia.config.AnthropicProperties;
+
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 // @Component: o Spring cria esta classe sozinho ao iniciar.
 // CommandLineRunner: o Spring chama o método run() logo depois de subir a aplicação.
 @Component
+@Profile("check")
 public class ApiKeyCheckRunner implements CommandLineRunner {
 
     private final AnthropicClient client;          // o cliente da API, criado no ClaudeConfig

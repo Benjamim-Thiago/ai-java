@@ -1,4 +1,4 @@
-package dev.livro.ia;
+package dev.livro.ia.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
